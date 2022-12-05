@@ -279,7 +279,7 @@ margin-right: 0;
 ======================================= */
 
   #project{
-       background-color: #0e1629;
+       background-color: gray;
        color: white;
        padding-top: 55px;
        padding-bottom: 55px;
@@ -289,7 +289,7 @@ margin-right: 0;
        color: rgb(255, 249, 249);
      }
     
-     .center{
+     .cent{
        text-align: center;
        padding: 10px;
      }
@@ -313,15 +313,21 @@ margin-right: 0;
      }
     /* Project css */
      #mainProject{
-       width: 70%;
-       display: flex;
-       margin: 20px auto;
-       justify-content: space-between;
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       align-items: center;
+       justify-content: center;
+       /* border: 1px solid red; */
+       gap:10px;
+      padding-left: 10px;
+      padding-right: 10px;
+       
+       
      }
      #mainProject>div{
-     width: 48%;
-     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
-     padding: 5px;
+     width: 90%;
+     padding: 10px;
      }
      .imageCont{
        display: flex;
@@ -357,7 +363,7 @@ margin-right: 0;
        display: block;
        border: 1px solid orange;
        font-size: 20px;
-       color: orangered;
+       color: #ff004f;
      }
      .tech-flex{
        display: flex;
@@ -371,6 +377,12 @@ margin-right: 0;
        background-color: rgb(23, 135, 246);
       cursor: pointer;
      }
+     .cent{
+         text-align: center;
+         padding: 10px;
+         font-size: 20px;
+         font-family: 'Ubuntu', sans-serif;
+       }
 
 
 /* ===========================================
@@ -501,4 +513,15 @@ Responsive Codes
 .home .home-content .text-3{
     font-size: 27px;
 }
+
+#mainProject{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  gap:10px;
+ padding-left: 10px;
+ padding-right: 10px;
 }
